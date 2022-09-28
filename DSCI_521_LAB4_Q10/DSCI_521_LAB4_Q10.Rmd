@@ -1,0 +1,77 @@
+---
+title: "Slide for Lab4 Q10"
+subtitle: "Something About Me"  
+author: 
+  - "Bingyang Hou"
+date: "October 1, 2022"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+### My Name
+
+My name is Bingyang Hou.
+
+```{r Assigning_name}
+
+my_name <- "Bingyang Hou"
+my_name
+
+```
+---
+
+## My Gender
+
+Female.
+```{r Assigning_gender}
+
+my_gender <- "Female"
+my_gender
+
+```
+---
+
+
+## My Intrest
+
+Watching dramas, playing piano.
+
+---
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
